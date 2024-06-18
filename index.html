@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <div class="navigation">
+        <a href="#">
+            <img style="width: 130px; padding-top: 15px;" src="./images/logo-showmax.png">
+        </a>
+
+        <ul>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Showtimes</a></li>
+            <li><a href="#">Theaters</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Book Event</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">Membership</a></li>
+
+            <a href="#">
+                <img style="width: 30px;" src="./images/man.png">
+            </a>
+            <a href="#">
+                <img style="width: 30px;" src="./images/woman.png">
+            </a>
+
+        </ul>
+
+    </div>
+
+    <div class="white-container"></div>
+
+
+
+    <div>
+        <h1>Movie Ticket Booking</h1>
+        <div class="test">
+            <form id="bookingForm">
+                <div class="inner-test">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age">
+                        <span id="minorIndicator" style="display:none;">(Minor)</span>
+                    </div>
+                </div>
+
+                <div class="inner-test">
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <div class="inner-test">
+                    <div class="form-group">
+                        <label for="movie">Select Movie:</label>
+                        <select id="movie" name="movie">
+                            <option value="" disabled selected>Select a movie</option>
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" style="margin-top: 10px;">Date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+
+                <div class="inner-test">
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="ticketType">Ticket Type:</label>
+                        <select id="ticketType" name="ticketType">
+                            <option value="regular">Regular</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inner-test">
+                    <div class="form-group">
+                        <label for="numTickets">Number of Tickets:</label>
+                        <input type="number" id="numTickets" name="numTickets" required min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="seats">Select Seats:</label>
+                        <div id="seatsContainer">
+                            <!-- Seats will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="errorMessage" style="color:red;"></div>
+                <button type="submit">Book Tickets</button>
+
+            </form>
+            <div id="summary" style="display:none;">
+                <h2>Booking Summary</h2>
+                <p id="summaryDetails" style="color: black;"></p>
+            </div>
+        </div>
+
+
+
+        <!-- </form> -->
+
+        <!-- </div> -->
+        <!-- </div> -->
+
+        <div class="black-container"></div>
+
+        <div class="vodka-container">
+            <h1>Your Home of Premium Entertainment !</h1>
+        </div>
+
+
+        <div class="multi-grid">
+            <div class="grid-item tall bg1"></div>
+            <div class="grid-item bg2"></div>
+            <div class="grid-item bg3 tall"></div>
+            <div class="grid-item bg4"></div>
+            <div class="grid-item bg5"></div>
+            <div class="grid-item bg6"></div>
+        </div>
+
+
+        <div class="pink-grid">
+            <div class="pink-box">
+                <div class="pink-img">
+                    <img src="./images/challenger.jfif">
+                </div>
+                <div class="pink-text">
+                    <p>The Challenger</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="pink-box">
+                <div class="pink-img">
+                    <img src="./images/young-woman.jfif">
+                </div>
+                <div class="pink-text">
+                    <p>The Young Woman at Sea</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="pink-box">
+                <div class="pink-img">
+                    <img src="./images/watchers-p.webp">
+                </div>
+                <div class="pink-text">
+                    <p>The Watcher</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="vodka-container">
+            <h1>Coming Soon to Showcase Theaters</h1>
+        </div>
+
+        <div class="brown-container">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="vodka-container">
+            <h1>Viewer's Choice of the Week</h1>
+        </div>
+
+        <div class="yellow-container">
+            <div class="overlay"></div>
+        </div>
+
+
+        <div class="texting-cont">
+            <p>Special offers for subscribers</p>
+            <h1>10 Percent Membership Discount</h1>
+            <p class="bluey">Subscribe to our newsletters now and stay up to date with new products and exclusive
+                offers.</p>
+            <input placeholder="Enter Email Address Here" type="text" />
+        </div>
+
+
+
+
+        <div class="pre-foot">
+            <div class="pre-foot-left">
+                <a href="#">
+                    <img style="width: 150px;" src="./images/logo-showmax.png" alt="Logo">
+                </a>
+                <p>From from thrillers to romance movies, we cater to all your needs under one roof.<br /> Our potion of
+                    sucess combines expert knowledge and whole range of products</p>
+                <h4>Follow Us on Social:</h4>
+
+                <div class="ft-icon-cont">
+                    <a href="#">
+                        <img style="height: 30px;" src="./images/blue-facebook.png" alt="Icon">
+                    </a>
+                    <a href="#">
+                        <img style="height: 30px;" src="./images/blue-twitter.png" alt="Icon">
+                    </a>
+                    <a href="#">
+                        <img style="height: 30px;" src="./images/blue-linkedin.png" alt="Icon">
+                    </a>
+                    <a href="#">
+                        <img style="height: 30px;" src="./images/blue-instagram.png" alt="Icon">
+                    </a>
+                    <a href="#">
+                        <img style="height: 30px;" src="./images/red-youtube.png" alt="Icon">
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="pre-foot-right">
+                <div class="list-cont">
+                    <h4>Opening Time</h4>
+                    <a href="#">Mon - fri: 8AM - 11PM</a>
+                    <a href="#">Sat: 9AM-11PM</a>
+                    <a href="#"></a>
+                    <a href="#">Sun: Opened 24hrs</a>
+                    <!-- <a href="#"></a> -->
+                    <h4>We work All The Holidays</h4>
+
+
+                </div>
+                <div class="list-cont">
+                    <h4>Our Offerings</h4>
+                    <a href="#">E-Prestige Tickets</a>
+                    <a href="#">Movie Party</a>
+                    <a href="#">Corporate Rental</a>
+                    <a href="#">Popcorn Club</a>
+                    <a href="#">Book an Event</a>
+
+                </div>
+                <div class="list-cont">
+                    <h4>About Us</h4>
+                    <a href="#">Gift Cards</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Showcase for Good</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Film Ratings</a>
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright 2023 Showcase Cinemas. All rights reserved. </p>
+            <p>Policy</p>
+            <p>Questions</p>
+            <p>Affiliate</p>
+            <p>Help</p>
+            <img style="width: 200px; object-fit: contain;" src="./images/footer-img-04.png">
+        </footer>
+
+
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

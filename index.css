@@ -1,0 +1,460 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f5f5f5; */
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: black;
+    height: 30px;
+    
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: white;
+        padding: 0px 25px;
+        display: block;
+    }
+    
+    .navigation ul li:hover a {
+        background-color: grey;
+        color: #ffffff;
+        text-decoration: underline .5px solid red;
+    }
+
+.white-container{
+    height: 500px;
+    background-image: url(./images/badboy-poster.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.blueish-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    
+}
+
+.blueish-boxitem{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .container { */
+    /* height: 500px; */
+    /* width: 90%;
+    margin: auto;
+    background-color: rgb(237, 246, 249);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+} */
+
+.test{
+    width: 80%;
+    margin: auto;
+    /* height: 500px; */
+    background-color: white;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.inner-test{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+/* .blueish-img {
+    background-image: url(./images/young-woman.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+} */
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 5px;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #0984e3;
+    border-radius: 5px;
+    
+}
+
+#seatsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #6c5ce7;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #74b9ff;
+}
+
+.black-container{
+    height: 400px;
+    background-image: url(./images/inside-out.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 10px;
+    
+    
+}
+
+.vodka-container{
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+    font-weight: 600;
+    
+}
+
+.multi-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 150px 300px;
+    gap: 10px;
+    height: 400px;
+    margin: auto;
+    width: 80%;
+    
+}
+
+.tall{
+    grid-row: span 2;
+}
+
+.bg1{
+    background-image: url(./images/christ-p.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2{
+    background-image: url(./images/cartoonposter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg3{
+    background-image: url(./images/apes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg4{
+    background-image: url(./images/furisa-poster.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg5{
+    background-image: url(./images/forge.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg6{
+    background-image: url(./images/garfield.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.brown-container{
+    height: 400px;
+    background-image: url(./images/day1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 90%;
+}
+
+.pink-grid{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 80%;      
+}
+
+.pink-box{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.pink-img{
+    width: 300px;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.pink-img img{
+    width: 300px;
+    
+    object-fit: contain;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.pink-img:hover img {
+    transform: scale(1.2);
+}
+
+.pink-box a{
+    text-decoration: none;
+    
+}
+
+
+.pink-box p{
+    color: red;
+    font-weight: 600;
+    
+}
+
+.pink-box button{
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    width: 100px;
+    color: white;
+    background-color: rgb(121, 0, 0);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+.pink-box button:hover{
+    background-color: forestgreen;
+
+}
+
+.yellow-container{
+    height: 400px;
+    background-image: url(./images/watchers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 90%;
+}
+
+.overlay {
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.texting-cont{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+
+}
+
+.texting-cont p{
+    color: #ffffff;
+}
+.texting-cont h1{
+    margin: 0;
+    padding-bottom: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+.bluey{
+    margin-bottom: 20px;
+    
+    
+}
+
+.texting-cont input{
+    width: 50%;
+    height: 40px;
+    
+}
+
+
+.pre-foot{
+    display: flex;
+    gap: 70px;
+    margin: auto;
+    width: 90%;
+    
+}
+
+.pre-foot-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.pre-foot-left a{
+    display: flex;
+    justify-content: left;
+    /* color: #032d60; */
+    margin: 0 0 20px 40px;
+    padding-top: 30px;
+    color: white;
+}
+
+.pre-foot-left p{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    color: white;
+}
+
+.pre-foot-left h4{
+    margin-left: 30px;
+    color: white;
+    
+}
+
+.ft-icon-cont{
+    display: flex;
+    gap: -15px;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.pre-foot-left h4{
+    /* color: rgb(68, 68, 68); */
+    margin-bottom: 20px;
+    color: white;
+}
+
+.pre-foot-right{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.pre-foot-right h4{
+    /* color: rgb(68, 68, 68); */
+    color: white;
+    
+}
+
+.list-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-cont h4{
+    margin-bottom: 20px;
+}
+.pre-foot-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+}
+
+footer{
+   height: 50px;
+   display: flex; 
+   justify-content: space-around;
+   flex-direction: row;
+   padding-top: 10px;
+   border-top: solid #DDD;
+   border-width: 50%;
+   
+}
+
+footer p{
+    color: #ffffff;
+}
+
+
